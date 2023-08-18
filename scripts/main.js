@@ -13,8 +13,43 @@ button.addEventListener('click', () => {
         errorMsg.style.opacity = 100;
         errorMsg.innerText = 'Introduzca su Rut sin puntos';
     } else if(outputContainer.classList.contains('inactive')){
+        let rutDigit = returnDigit(rutInput.value);
+        rutOutput.innerText = `${Number(rutInput.value).toLocaleString('es-CL')}-${rutDigit}`;
+
         outputContainer.classList.toggle('inactive');
         button.style.opacity = 0;
         errorMsg.style.opacity = 0;
     }
 });
+
+function returnDigit(rut) {
+    let arrayRut = rut.split('');
+    let reverseRut = arrayRut.reverse();
+    let number = 2;
+    let total = 0;
+    let digit = 0;
+    for (const d of reverseRut) {
+        if(number > 7){
+            number = 2;
+        }
+        total = total + (Number(d) * number);
+        number++;
+    }
+    console.log(total);
+    digit = 11 - total%11;
+    console.log(digit);
+    return digit;
+}
+
+/*
+
+6*2=12
+2*3=6
+1*4=4
+1*5=5
+8*6=48
+8*7=56
+6*2=12
+2*3=6
+
+*/
