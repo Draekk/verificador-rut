@@ -35,21 +35,6 @@ function returnDigit(rut) {
         total = total + (Number(d) * number);
         number++;
     }
-    console.log(total);
     digit = 11 - total%11;
-    console.log(digit);
     return digit;
 }
-
-/*
-
-6*2=12
-2*3=6
-1*4=4
-1*5=5
-8*6=48
-8*7=56
-6*2=12
-2*3=6
-
-*/
