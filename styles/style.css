@@ -18,15 +18,28 @@ html {
 }
 
 input {
-    font-size: 2rem;
-    width: 20rem;
+    font-size: 5rem;
+    width: 27rem;
+    border: none;
+    background: none;
+    text-align: center;
+    color: var(--white);
+    margin: 5rem 0 3rem 0;
+}
+
+input:hover {
+    background: var(--shadow-inset-color);
+}
+
+input:focus{
+    background: var(--shadow-inset-color);
 }
 
 button {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
-    width: 20rem;
-    height: 6rem;
+    width: 25rem;
+    height: 10rem;
     border: none;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 1rem var(--shadow-color),
@@ -35,22 +48,31 @@ button {
     color: var(--white);
 }
 
+button:hover {
+    text-shadow: 0 0 1rem var(--white);
+    cursor: pointer;
+}
+
 h2 {
-    font-size: 2.3rem;
+    font-size: 4rem;
     color: var(--white);
+    text-align: center;
+    width: 100%;
 }
 
 .c-h3 {
-    font-size: 2.3rem;
+    font-size: 3.5rem;
     color: var(--white);
     border: solid 0.2rem var(--white);
     border-radius: 1rem;
-    width: 18rem;
-    height: 5rem;
+    width: 25rem;
+    height: 10rem;
     margin-top: 1rem;
     text-align: center;
     text-size-adjust: 1rem 1rem;
     background: var(--shadow-color);
+    position: absolute;
+    top: 61.5%;
 }
 
 .container {
@@ -60,7 +82,7 @@ h2 {
 }
 
 .inactive {
-    opacity: 0;
+    display: none;
 }
 
 body {
@@ -72,11 +94,9 @@ body {
 
 .container main {
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 50vh;
+    height: 40rem;
     width: 30rem;
     border: solid 0.3rem var(--white);
     border-radius: 2rem;
     background: var(--shadow-color);
-    transition: 1s;
 }
