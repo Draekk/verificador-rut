@@ -1,9 +1,10 @@
 :root {
     --black: #000814;
     --white: #f9f7f3;
+    --dark-blue: #001d3d;
+    --error-red: #ff0400;
     --shadow-color: rgba(0,0,0,0.7);
     --shadow-inset-color: rgba(255,255,255,0.2);
-    --dark-blue: #001d3d;
 }
 
 * {
@@ -24,7 +25,7 @@ input {
     background: none;
     text-align: center;
     color: var(--white);
-    margin: 5rem 0 3rem 0;
+    margin-top: 5rem;
 }
 
 input:hover {
@@ -58,6 +59,18 @@ h2 {
     color: var(--white);
     text-align: center;
     width: 100%;
+}
+
+.error {
+    color: var(--error-red);
+    text-shadow: 0 0 1.5rem var(--error-red);
+    width: 100%;
+    text-align: right;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    opacity: 0;
 }
 
 .c-h3 {
