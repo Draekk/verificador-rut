@@ -36,5 +36,13 @@ function returnDigit(rut) {
         number++;
     }
     digit = 11 - total%11;
-    return digit;
+    
+    switch(digit){
+        case 10:
+            return 'K';
+        case 11:
+            return 0;
+        default:
+            return digit;
+    }
 }
