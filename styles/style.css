@@ -1,115 +1,114 @@
 :root {
-    --black: #000814;
-    --white: #f9f7f3;
-    --dark-blue: #001d3d;
-    --error-red: #ff0400;
-    --shadow-color: rgba(0,0,0,0.7);
-    --shadow-inset-color: rgba(255,255,255,0.2);
+  --black: #000814;
+  --white: #f9f7f3;
+  --dark-blue: #001d3d;
+  --error-red: #ff0400;
+  --shadow-color: rgba(0, 0, 0, 0.7);
+  --shadow-inset-color: rgba(255, 255, 255, 0.2);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 input {
-    font-size: 5rem;
-    width: 27rem;
-    border: none;
-    background: none;
-    text-align: center;
-    color: var(--white);
-    margin-top: 5rem;
+  font-size: 5rem;
+  width: 27rem;
+  border: none;
+  background: none;
+  text-align: center;
+  color: var(--white);
+  margin-top: 5rem;
 }
 
 input:hover {
-    background: var(--shadow-inset-color);
+  background: var(--shadow-inset-color);
 }
 
-input:focus{
-    background: var(--shadow-inset-color);
+input:focus {
+  background: var(--shadow-inset-color);
 }
 
 button {
-    font-size: 4rem;
-    font-weight: bold;
-    width: 25rem;
-    height: 10rem;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 1rem var(--shadow-color),
-                0.2rem 0.2rem 0.8rem 0.1rem var(--shadow-inset-color) inset;
-    background-color: var(--dark-blue);
-    color: var(--white);
+  font-size: 4rem;
+  font-weight: bold;
+  width: 25rem;
+  height: 10rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 1rem var(--shadow-color),
+    0.2rem 0.2rem 0.8rem 0.1rem var(--shadow-inset-color) inset;
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 
 button:hover {
-    text-shadow: 0 0 1rem var(--white);
-    cursor: pointer;
+  text-shadow: 0 0 1rem var(--white);
+  cursor: pointer;
 }
 
 h2 {
-    font-size: 4rem;
-    color: var(--white);
-    text-align: center;
-    width: 100%;
+  font-size: 4rem;
+  color: var(--white);
+  text-align: center;
+  width: 100%;
 }
 
 .error {
-    color: var(--error-red);
-    text-shadow: 0 0 1.5rem var(--error-red);
-    width: 100%;
-    text-align: right;
-    font-size: 1.8rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    opacity: 0;
+  color: var(--error-red);
+  text-shadow: 0 0 1.5rem var(--error-red);
+  width: 100%;
+  text-align: right;
+  font-size: 1.8rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  opacity: 0;
 }
 
 .c-h3 {
-    font-size: 3rem;
-    color: var(--white);
-    border: solid 0.2rem var(--white);
-    border-radius: 1rem;
-    width: 25rem;
-    height: 10rem;
-    margin-top: 1rem;
-    text-align: center;
-    text-size-adjust: 1rem 1rem;
-    background: var(--shadow-color);
-    position: absolute;
-    top: 61.5%;
+  font-size: 3rem;
+  color: var(--white);
+  border: solid 0.2rem var(--white);
+  border-radius: 1rem;
+  width: 25rem;
+  height: 10rem;
+  text-align: center;
+  text-size-adjust: 1rem 1rem;
+  background: var(--shadow-color);
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inactive {
-    display: none;
+  display: none;
 }
 
 body {
-    height: 100vh;
-    flex-direction: column;
-    background-image: url(https://i.ibb.co/2sZ0kvq/background.png);
-    background-position: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url(https://i.ibb.co/2sZ0kvq/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container main {
-    flex-direction: column;
-    height: 40rem;
-    width: 30rem;
-    border: solid 0.3rem var(--white);
-    border-radius: 2rem;
-    background: var(--shadow-color);
+  flex-direction: column;
+  height: 40rem;
+  width: 40rem;
+  border: solid 0.3rem var(--white);
+  border-radius: 2rem;
+  background: var(--shadow-color);
 }
